@@ -69,6 +69,9 @@ def main_page():
         
         st.plotly_chart(predict_fig, use_container_width = True)
         st.plotly_chart(actual_fig, use_container_width = True)
+
+        st.success("恭喜成功!")
+        st.balloons()
     
     # st.write("""<br><br><br><br><br><br><br><br><br><br>
     #          此App為台灣行銷研究有限公司版權所有之課程用教材 2022
