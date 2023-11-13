@@ -30,6 +30,9 @@ def upload():
     data_file = st.file_uploader("請上傳鳶尾花案例資料: IRIS.csv")
     if data_file is not None:
         return pd.read_csv(data_file, encoding='utf-8-sig')
+    else:
+        if st.button("使用預設資料集", key='default_data'):
+            return pd.read_csv("./IRIS.csv", encoding='utf-8-sig')
 
 def show_img():
     
